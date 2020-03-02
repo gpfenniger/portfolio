@@ -1,6 +1,7 @@
 <template>
   <div class="section">
     <h3>{{ title }}</h3>
+    <code v-html="content"></code>
   </div>
 </template>
 
@@ -8,7 +9,8 @@
 export default {
   name: "Section",
   props: {
-    title: String
+    title: String,
+    content: String
   }
 };
 </script>
