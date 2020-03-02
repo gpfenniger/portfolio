@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Projects from "../views/Projects.vue";
+import Section from "../views/Section.vue";
 
 Vue.use(VueRouter);
 
@@ -11,13 +13,49 @@ const routes = [
     component: Home
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    path: "/projects",
+    name: "Projects",
+    component: Projects
+  },
+  {
+    path: "/education",
+    name: "Education",
+    component: Section,
+    props: {
+      title: "Formal Education"
+    }
+  },
+  {
+    path: "/professional",
+    name: "Professional",
+    component: Section,
+    props: {
+      title: "Professional Expierence"
+    }
+  },
+  {
+    path: "/volunteer",
+    name: "Volunteer",
+    component: Section,
+    props: {
+      title: "Volunteer Expierence"
+    }
+  },
+  {
+    path: "/honours",
+    name: "Honours",
+    component: Section,
+    props: {
+      title: "Honours and Awards"
+    }
+  },
+  {
+    path: "/skills",
+    name: "Skills",
+    component: Section,
+    props: {
+      title: "Technical Skills"
+    }
   }
 ];
 

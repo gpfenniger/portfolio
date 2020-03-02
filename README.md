@@ -7,7 +7,7 @@ showing competency in several web technologies.
 
 This site takes advantage of the following frameworks and libraries:
 
-* Vue.JS
-* Webpack
-* TypeScript
-* Axios
+- Vue.JS
+- Webpack
+- TypeScript
+- Axios
