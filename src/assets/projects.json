@@ -23,14 +23,14 @@
     "title": "Personal Blog",
     "link": "https://github.com/gpfenniger/cpsc2600-finalproject",
     "tech": ["React", "Node", "Mongoose", "MongoDB"],
-    "status": "Finished School Project",
+    "status": "School Project",
     "description": "This full stack web application was built for Langara's CPSC 2600 class. For the project I designed a simple blog, complete with a primitive login system."
   },
   {
     "title": "Art Show - Custom Wordpress Theme",
     "link": "https://github.com/gpfenniger/CPSC2030_Final_Project",
     "tech": ["EJS", "PHP", "Wordpress", "MySQL"],
-    "status": "Finished School Project",
+    "status": "School Project",
     "description": "This Wordpress theme was built for Langara's CPSC 2030 class, and was made to display my coworkers art pieces."
   }
 ]
