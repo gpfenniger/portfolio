@@ -16,36 +16,13 @@
 </template>
 
 <script>
+import p from "@/assets/projects.json";
+
 export default {
   name: "Projects",
   data: () => {
     return {
-      projects: [
-        {
-          title: "Writing Organizer",
-          link: "https://github.com/gpfenniger/worldbuilding-app",
-          tech: ["Vue", "Vuetify", "Node", "Mongoose", "MongoDB"],
-          status: "In Progress",
-          description:
-            "I started building this web application to help organize my own writing. Many of the tools avaliable did not work across platforms or were not what I was looking for, and so I set out to build my own."
-        },
-        {
-          title: "Bookshelf",
-          tech: ["React", "Node", "Postgres", "TypeScript"],
-          link: "",
-          status: "In Progress",
-          description:
-            "This project helps to track what books I am reading and allows the user to create lists and add bookmarks. Eventually I hope to use this project as part of an IoT device."
-        },
-        {
-          title: "Personal Blog",
-          status: "School Project",
-          tech: ["React", "Node", "Mongoose", "MongoDB"],
-          link: "google.com",
-          description:
-            "This full stack web application was built for Langara's CPSC 2600 class. For the project I designed a simple blog, complete with a primitive login system."
-        }
-      ]
+      projects: p
     };
   },
   methods: {

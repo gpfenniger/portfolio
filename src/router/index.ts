@@ -6,7 +6,7 @@ import Section from "../views/Section.vue";
 
 import Showdown from "showdown";
 const converter = new Showdown.Converter();
-const { education, honours } = require("../assets/sections.ts");
+//const education = require("@/assets/sections_md/education.md");
 
 Vue.use(VueRouter);
 
@@ -26,8 +26,8 @@ const routes = [
     name: "Education",
     component: Section,
     props: {
-      title: "Formal Education",
-      content: converter.makeHtml(education)
+      title: "Formal Education"
+      //content: converter.makeHtml(education)
     }
   },
   {
@@ -52,7 +52,7 @@ const routes = [
     component: Section,
     props: {
       title: "Honours and Awards",
-      content: converter.makeHtml(honours)
+      content: ""
     }
   },
   {
