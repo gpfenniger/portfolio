@@ -3,4 +3,4 @@ const express = require("express");
 const app = express();
 app.use(express.static("dist"));
 
-app.listen(8080, () => console.log("listening"));
+app.listen(process.env.PORT || 8080, () => console.log("listening"));
