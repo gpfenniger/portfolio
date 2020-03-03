@@ -1,15 +1,38 @@
 <template>
   <div id="nav">
     <h3>Pages</h3>
-    <router-link to="/">Home</router-link>
-    <router-link to="/projects">Projects</router-link>
-    <router-link to="/education">Education</router-link>
-    <router-link to="/professional">Professional Expierence</router-link>
-    <router-link to="/volunteer">Volunteer Expierence</router-link>
-    <router-link to="/honours">Honours and Awards</router-link>
-    <router-link to="/skills">Technical Skills</router-link>
+    <NavLink
+      v-for="(link, index) in links"
+      :to="link.to"
+      :value="link.value"
+      :key="index"
+    />
   </div>
 </template>
+
+<script>
+import NavLink from "@/components/NavLink.vue";
+
+export default {
+  name: "Navigation",
+  components: {
+    NavLink
+  },
+  data: () => {
+    return {
+      links: [
+        { to: "/", value: "Home" },
+        { to: "/projects", value: "Projects" },
+        { to: "/education", value: "Education" },
+        { to: "/professional", value: "Professional Expierence" },
+        { to: "/volunteer", value: "Volunteer Expierence" },
+        { to: "/honours", value: "Honours and Awards" },
+        { to: "/skills", value: "Technical Skills" }
+      ]
+    };
+  }
+};
+</script>
 
 <style>
 #nav {
@@ -17,6 +40,10 @@
   flex-direction: column;
   text-align: center;
   padding: 30px;
+  width: 300px;
+
+  background-color: #4c566a;
+  border-radius: 5px;
 
   a {
     font-weight: bold;

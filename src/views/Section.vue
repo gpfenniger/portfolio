@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section container">
     <h3>{{ title }}</h3>
     <code v-html="content"></code>
   </div>
@@ -14,3 +14,10 @@ export default {
   }
 };
 </script>
+
+<style>
+.section {
+  margin-left: 10px;
+  width: 100%;
+}
+</style>

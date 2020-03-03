@@ -32,7 +32,8 @@ const honours = `
 
     Recieved in 2015
 
-    This Scouting award is given in recongition for work that goes outside the responbilities of the recipeint. I recieved this award for my work on Camp Barnard's climbing wall.
+    This Scouting award is given in recongition for work that goes outside the responbilities of the recipeint. 
+    I recieved this award for my work on Camp Barnard's climbing wall.
 `;
 
 export { education, honours };
