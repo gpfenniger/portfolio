@@ -4,10 +4,6 @@ import Home from "../views/Home.vue";
 import Projects from "../views/Projects.vue";
 import Section from "../views/Section.vue";
 
-import Showdown from "showdown";
-const converter = new Showdown.Converter();
-//const education = require("@/assets/sections_md/education.md");
-
 Vue.use(VueRouter);
 
 const routes = [
@@ -26,8 +22,8 @@ const routes = [
     name: "Education",
     component: Section,
     props: {
-      title: "Formal Education"
-      //content: converter.makeHtml(education)
+      title: "Langara Colllege",
+      content: require("@/assets/sections/education.ts").default
     }
   },
   {
@@ -35,7 +31,8 @@ const routes = [
     name: "Professional",
     component: Section,
     props: {
-      title: "Professional Expierence"
+      title: "Professional Expierence",
+      content: require("@/assets/sections/professional.ts").default
     }
   },
   {
@@ -52,7 +49,7 @@ const routes = [
     component: Section,
     props: {
       title: "Honours and Awards",
-      content: ""
+      content: require("@/assets/sections/honours.ts").default
     }
   },
   {
