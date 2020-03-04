@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const showdown = require("showdown");
 const parser = new showdown.Converter();
+const projects = require("./assets/projects.json");
 const path = require("path");
 const fs = require("fs");
 
@@ -20,6 +21,7 @@ router
   .get("/api/honours", (_req, res) => sendSection(res, "honours"))
   .get("/api/professional", (_req, res) => sendSection(res, "professional"))
   .get("/api/skills", (_req, res) => sendSection(res, "skills"))
-  .get("/api/volunteer", (_req, res) => sendSection(res, "volunteer"));
+  .get("/api/volunteer", (_req, res) => sendSection(res, "volunteer"))
+  .get("/api/projects", (_req, res) => res.send(projects));
 
 module.exports = router;

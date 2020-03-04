@@ -5,4 +5,9 @@ let getSection = async (name: string) => {
   return result.data;
 };
 
-export { getSection };
+let getProjects = async () => {
+  let result = await axios.get(`/api/projects`);
+  return result.data;
+};
+
+export { getProjects, getSection };

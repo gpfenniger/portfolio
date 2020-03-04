@@ -15,18 +15,26 @@
   </div>
 </template>
 
-<script>
-import p from "@/assets/projects.json";
+<script lang="ts">
+import Vue from "vue";
+import { getProjects } from "@/services.ts";
 
-export default {
+export default Vue.extend({
   name: "Projects",
   data: () => {
     return {
-      projects: p
+      projects: []
     };
   },
+  beforeMount() {
+    getProjects()
+      .then((data: any) => {
+        this.projects = data;
+      })
+      .catch((e: any) => console.error(e));
+  },
   methods: {
-    statusClasses: status => {
+    statusClasses: (status: string) => {
       let result = "status ";
       switch (status) {
         case "In Progress":
@@ -39,7 +47,7 @@ export default {
       return result;
     }
   }
-};
+});
 </script>
 
 <style lang="scss">
