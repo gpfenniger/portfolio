@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Projects from "../views/Projects.vue";
 import Section from "../views/Section.vue";
+import { getSection } from "@/services";
 
 Vue.use(VueRouter);
 
@@ -23,7 +24,7 @@ const routes = [
     component: Section,
     props: {
       title: "Langara Colllege",
-      content: require("@/assets/sections/education.ts").default
+      link: "education"
     }
   },
   {
@@ -32,7 +33,7 @@ const routes = [
     component: Section,
     props: {
       title: "Professional Expierence",
-      content: require("@/assets/sections/professional.ts").default
+      link: "professional"
     }
   },
   {
@@ -40,7 +41,8 @@ const routes = [
     name: "Volunteer",
     component: Section,
     props: {
-      title: "Volunteer Expierence"
+      title: "Volunteer Expierence",
+      link: "volunteer"
     }
   },
   {
@@ -49,7 +51,7 @@ const routes = [
     component: Section,
     props: {
       title: "Honours and Awards",
-      content: require("@/assets/sections/honours.ts").default
+      link: "honours"
     }
   },
   {
@@ -57,7 +59,8 @@ const routes = [
     name: "Skills",
     component: Section,
     props: {
-      title: "Technical Skills"
+      title: "Technical Skills",
+      link: "skills"
     }
   }
 ];
