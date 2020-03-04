@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Navigation />
-    <router-view />
+    <div id="wrapper">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -18,15 +20,17 @@ export default {
 
 <style lang="scss">
 #app {
-  display: flex;
-  flex-direction: row;
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  height: 100%;
+}
+
+#wrapper {
   margin: auto;
-  margin-top: 5%;
-  width: 80%;
+  padding-top: 5%;
+  width: 60%;
   height: 80%;
 }
 </style>

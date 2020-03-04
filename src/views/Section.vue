@@ -1,7 +1,9 @@
 <template>
   <div class="section container">
-    <h3>{{ title }}</h3>
-    <code v-html="content"></code>
+    <div id="content-wrapper">
+      <h3>{{ title }}</h3>
+      <div v-html="content"></div>
+    </div>
   </div>
 </template>
 
@@ -43,7 +45,13 @@ export default Vue.extend({
 
 <style>
 .section {
-  margin-left: 10px;
   width: 100%;
+  height: 100%;
+}
+
+#content-wrapper {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

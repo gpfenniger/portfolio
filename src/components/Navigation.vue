@@ -1,13 +1,12 @@
 <template>
-  <div id="nav">
-    <h3>Pages</h3>
+  <nav>
     <NavLink
       v-for="(link, index) in links"
       :to="link.to"
       :value="link.value"
       :key="index"
     />
-  </div>
+  </nav>
 </template>
 
 <script>
@@ -35,20 +34,18 @@ export default {
 </script>
 
 <style>
-#nav {
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
   display: flex;
-  flex-direction: column;
+  width: 100%;
   text-align: center;
-  padding: 30px;
-  width: 300px;
-
-  background-color: #4c566a;
-  border-radius: 5px;
+  padding-top: 30px;
 
   a {
     font-weight: bold;
     color: #2c3e50;
-    margin-top: 15px;
 
     &.router-link-exact-active {
       color: #42b983;
