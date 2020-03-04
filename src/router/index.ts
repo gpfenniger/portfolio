@@ -3,7 +3,6 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Projects from "../views/Projects.vue";
 import Section from "../views/Section.vue";
-import { getSection } from "@/services";
 
 Vue.use(VueRouter);
 

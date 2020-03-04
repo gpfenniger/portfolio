@@ -42,16 +42,3 @@ export default Vue.extend({
   }
 });
 </script>
-
-<style>
-.section {
-  width: 100%;
-  height: 100%;
-}
-
-#content-wrapper {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>

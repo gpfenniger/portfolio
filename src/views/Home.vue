@@ -45,11 +45,6 @@ export default {
 </script>
 
 <style lang="scss">
-.home {
-  width: 100%;
-  height: 100%;
-}
-
 #first {
   font-size: 24px;
   margin-bottom: 5px;

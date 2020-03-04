@@ -35,9 +35,6 @@ export default {
 
 <style>
 nav {
-  position: fixed;
-  left: 0;
-  top: 0;
   display: flex;
   width: 100%;
   text-align: center;
