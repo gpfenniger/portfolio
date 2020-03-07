@@ -22,7 +22,7 @@ const routes = [
     name: "Education",
     component: Section,
     props: {
-      title: "Langara Colllege",
+      title: "Langara College",
       link: "education"
     }
   },

@@ -1,8 +1,10 @@
 <template>
   <div class="section container">
-    <div id="content-wrapper">
-      <h3>{{ title }}</h3>
-      <div v-html="content"></div>
+    <div class="frame">
+      <div id="content-wrapper">
+        <h3>{{ title }}</h3>
+        <div v-html="content"></div>
+      </div>
     </div>
   </div>
 </template>
