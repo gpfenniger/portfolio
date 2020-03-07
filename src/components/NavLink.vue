@@ -24,7 +24,7 @@ export default {
   margin: 0 15px 15px;
   border-radius: 5px;
   text-decoration: none;
-  color: #4c566a;
+  color: #d8dee9;
   flex: 1;
 }
 .nav-wrapper:hover {
